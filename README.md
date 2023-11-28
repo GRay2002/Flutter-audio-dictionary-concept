@@ -5,7 +5,6 @@ A simple Flutter application for learning basic phrases in different languages. 
 ## Table of Contents
 - [Description](#description)
 - [Features](#features)
-- [Dependencies](#dependencies)
 - [License](#license)
 
 ## Description
