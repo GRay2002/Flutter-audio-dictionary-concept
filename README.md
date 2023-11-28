@@ -1,16 +1,24 @@
-# translator_app
+# Basic Phrases Translator App
 
-A new Flutter project.
+A simple Flutter application for learning basic phrases in different languages. The app allows users to tap on phrases to hear their pronunciation.
 
-## Getting Started
+## Table of Contents
+- [Description](#description)
+- [Features](#features)
+- [Usage](#usage)
+- [Dependencies](#dependencies)
+- [License](#license)
 
-This project is a starting point for a Flutter application.
+## Description
 
-A few resources to get you started if this is your first Flutter project:
+The Basic Phrases Translator App is built with Flutter and utilizes the `audioplayers` package to play audio for each phrase. It provides an interactive way for users to learn common phrases in multiple languages.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Features
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- Interactive grid display of basic phrases.
+- Pronunciation audio for each phrase.
+- Stylish card design with gradient background.
+
+
+## License
+This project is licensed under the MIT License.
