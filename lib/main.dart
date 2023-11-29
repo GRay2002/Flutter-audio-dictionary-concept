@@ -1,5 +1,5 @@
-import 'package:flutter/material.dart';
 import 'package:audioplayers/audioplayers.dart';
+import 'package:flutter/material.dart';
 
 void main() {
   runApp(const MyApp());
@@ -20,12 +20,13 @@ class TranslationApp extends StatefulWidget {
   const TranslationApp({super.key});
 
   @override
+  // ignore: library_private_types_in_public_api
   _TranslationAppState createState() => _TranslationAppState();
 }
 
 class _TranslationAppState extends State<TranslationApp> {
   // Lista de cuvinte, pattern: 'română', 'germană'
-  List<String> phrases = [
+  List<String> phrases = <String>[
     'Salut',
     'Willkommen',
     'Ma numesc',
@@ -61,9 +62,9 @@ class _TranslationAppState extends State<TranslationApp> {
         itemCount: phrases.length,
 
         //builderul pentru fiecare item din lista (un fel de for my fancy)
-        itemBuilder: (context, index) {
+        itemBuilder: (BuildContext context, int index) {
           //indexul este indexul din lista de cuvinte, dar noi vrem sa incepem de la 1, nu de la 0 (pentru ca avem fisierele audio de la 1.mp3 la 8.mp3)
-          int phraseIndex = index + 1;
+          final int phraseIndex = index + 1;
 
           //returnam un GestureDetector pentru a putea da apasa pe fiecare item din lista
           return GestureDetector(
@@ -85,7 +86,7 @@ class _TranslationAppState extends State<TranslationApp> {
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(15),
                   gradient: LinearGradient(
-                    colors: [Colors.purple[700]!, Colors.purple[900]!], // Adjust colors as needed
+                    colors: <Color>[Colors.purple[700]!, Colors.purple[900]!], // Adjust colors as needed
                     begin: Alignment.topLeft,
                     end: Alignment.bottomRight,
                   ),
